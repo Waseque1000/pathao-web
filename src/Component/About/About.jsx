@@ -3,7 +3,7 @@ import img from "../../../public/waseque.jpeg";
 
 const About = () => {
   return (
-    <div className=" ml-64 grid grid-cols-2">
+    <div className=" ml-64 grid grid-cols-2  ">
       <div className="">
         <img className="h-[100%] w-96" src={img} alt="" />
       </div>

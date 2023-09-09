@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
 
 const Main = () => {
   return (
-    <div className="flex">
+    <div className="flex sm:flex">
       <Header />
       <div className="pt-[50px] ml-14">
         <Outlet className=""></Outlet>

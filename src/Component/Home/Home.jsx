@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className=" ml-64   mr-10 flex">
+    <div className=" ml-64 mr-10 flex sm:flex">
       <img className="h-[70%] w-96" src={img} alt="" />
       <div className="ml-14">
         <h2>
           Full Bio{" "}
           <span className=" bg-red-500">
-            <Link className="font-bold" to="/about">
+            <Link className="font-bold text-2xl underline" to="/about">
               here
             </Link>
           </span>

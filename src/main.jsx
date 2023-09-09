@@ -6,9 +6,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./Component/About/About.jsx";
 import Artical from "./Component/Artical/Artical.jsx";
 import Home from "./Component/Home/Home.jsx";
-import Talks from "./Component/Talks/Talks.jsx";
 import Main from "./Component/Main/Main.jsx";
 import Newsletter from "./Component/Newsletter/Newsletter.jsx";
+import SkillSection from "./Component/Skill/Skill.jsx";
+import Skill from "./Component/Skill/Skill.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,8 +29,8 @@ const router = createBrowserRouter([
         element: <Artical />,
       },
       {
-        path: "/talks",
-        element: <Talks />,
+        path: "/skill",
+        element: <Skill />,
       },
       {
         path: "/news",

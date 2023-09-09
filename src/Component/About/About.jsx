@@ -1,5 +1,13 @@
 import React from "react";
 import img from "../../../public/waseque.jpeg";
+import { Link } from "react-router-dom";
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const About = () => {
   return (
@@ -25,6 +33,35 @@ const About = () => {
           Waseque’s business podcast/channel has garnered 2 million+ views
           across YouTube, Facebook, and other platforms.
         </p>
+        <div className="mt-10">
+          <Link to="https://www.facebook.com/">
+            <FontAwesomeIcon
+              className="h-8 w-8 hover:font-2xl"
+              icon={faFacebook}
+            />
+          </Link>
+          <Link to="https://twitter.com/?lang=en" className="ml-4">
+            <FontAwesomeIcon
+              className="h-8 w-8 hover:font-2xl"
+              icon={faTwitter}
+            />
+          </Link>
+          <Link
+            to="https://www.linkedin.com/in/waseque-arafat-5b479a268/"
+            className="ml-4"
+          >
+            <FontAwesomeIcon
+              className="h-8 w-8 hover:font-2xl"
+              icon={faLinkedin}
+            />
+          </Link>
+          <Link to="https://github.com/Waseque1000" className="ml-4">
+            <FontAwesomeIcon
+              className="h-8 w-8 hover:font-2xl"
+              icon={faGithub}
+            />
+          </Link>
+        </div>
       </div>
     </div>
   );

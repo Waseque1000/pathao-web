@@ -8,12 +8,17 @@ import Artical from "./Component/Artical/Artical.jsx";
 import Home from "./Component/Home/Home.jsx";
 import Talks from "./Component/Talks/Talks.jsx";
 import Main from "./Component/Main/Main.jsx";
+import Newsletter from "./Component/Newsletter/Newsletter.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Main />,
     children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
       {
         path: "/about",
         element: <About />,
@@ -25,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/talks",
         element: <Talks />,
+      },
+      {
+        path: "/news",
+        element: <Newsletter />,
       },
     ],
   },
